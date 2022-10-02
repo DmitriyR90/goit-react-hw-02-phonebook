@@ -1,4 +1,4 @@
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import { FilterInput, Title, FilterWrap } from './Filter.styled';
 
 export const Filter = ({ value, onChange }) => {

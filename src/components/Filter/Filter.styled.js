@@ -1,4 +1,4 @@
-import { Formik, Field } from 'formik';
+import { Field } from 'formik';
 import styled from 'styled-components';
 
 export const FilterWrap = styled.div`
