@@ -1,5 +1,6 @@
 import { Formik } from 'formik';
 import { FilterInput, Title, FilterWrap } from './Filter.styled';
+import PropTypes from 'prop-types';
 
 export const Filter = ({ value, onChange }) => {
   return (
@@ -15,4 +16,9 @@ export const Filter = ({ value, onChange }) => {
       </Formik>
     </FilterWrap>
   );
+};
+
+Filter.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
 };
