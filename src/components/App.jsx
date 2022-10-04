@@ -16,8 +16,12 @@ export class App extends Component {
   };
 
   handleSubmit = values => {
-    const allContacts = this.state.contacts.map(contact => contact.name);
-    if (allContacts.includes(values.name)) {
+    const allContacts = this.state.contacts.map(contact =>
+      contact.name.toLocaleLowerCase()
+    );
+    const newContact = values.name.toLocaleLowerCase();
+
+    if (allContacts.includes(newContact)) {
       alert(`${values.name} is already in contacts.`);
       return;
     }
